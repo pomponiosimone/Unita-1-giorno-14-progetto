@@ -476,7 +476,15 @@ stampaTesto()
 /* ESERCIZIO 23
   Scrivi una funzione per aggiungere un background di colore rosso a ogni link all'interno della pagina.
 */
+function sfondoRosso () {
+  const aElements = document.querySelectorAll("a")
+  aElements.forEach(element => {
+    element.style.backgroundColor = "red";
+  });
+}
 
+console.log("Esercizio 23: sfondo rosso link")
+sfondoRosso()
 /* ESERCIZIO 24
   Scrivi una funzione per aggiungere un nuovo elemento alla lista non ordinata con id "myList".
 */
